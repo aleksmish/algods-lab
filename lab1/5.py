@@ -1,0 +1,10 @@
+a = float(input("Введите первое ненулевое число: "))
+b = float(input("Введите второе ненулевое число: "))
+
+mod_a = abs(a)
+mod_b = abs(b)
+
+print("Сумма модулей:", mod_a + mod_b)
+print("Разность модулей:", mod_a - mod_b)
+print("Произведение модулей:", mod_a * mod_b)
+print("Частное модулей:", mod_a / mod_b)
