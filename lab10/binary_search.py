@@ -19,10 +19,8 @@ def binary_search(arr, target):
 
 
 if __name__ == "__main__":
-    sorted_array = (2, 5, 8, 12, 16, 23, 38, 56, 72, 91)
-
-    result_found = binary_search(sorted_array, 23)
+    sorted_array = input("Введите сортированные числа через пробел: ")
+    numbers = [int(x) for x in sorted_array.split()]
+    target = int(input("Введите искомое число: "))
+    result_found = binary_search(numbers, target)
     print(f"Результат: {result_found}")
-
-    result_not_found = binary_search(sorted_array, 40)
-    print(f"Результат: {result_not_found}")
